@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		380F01C204AB4ADAB7A640AF /* libPods-RazrbitHarness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F90214AF5E944F083F68E46 /* libPods-RazrbitHarness.a */; };
+		521586C6199E038200B0EE6D /* Razrbit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 521586C5199E038200B0EE6D /* Razrbit.podspec */; };
+		521AE983199B31F700D716E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521AE982199B31F700D716E5 /* Foundation.framework */; };
+		521AE985199B31F700D716E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521AE984199B31F700D716E5 /* CoreGraphics.framework */; };
+		521AE987199B31F700D716E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521AE986199B31F700D716E5 /* UIKit.framework */; };
+		521AE98D199B31F700D716E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521AE98B199B31F700D716E5 /* InfoPlist.strings */; };
+		521AE98F199B31F700D716E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521AE98E199B31F700D716E5 /* main.m */; };
+		521AE993199B31F700D716E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 521AE992199B31F700D716E5 /* AppDelegate.m */; };
+		521AE995199B31F700D716E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521AE994199B31F700D716E5 /* Images.xcassets */; };
+		521AE99C199B31F700D716E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521AE99B199B31F700D716E5 /* XCTest.framework */; };
+		521AE99D199B31F700D716E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521AE982199B31F700D716E5 /* Foundation.framework */; };
+		521AE99E199B31F700D716E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521AE986199B31F700D716E5 /* UIKit.framework */; };
+		521AE9A6199B31F700D716E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521AE9A4199B31F700D716E5 /* InfoPlist.strings */; };
+		521AE9A8199B31F700D716E5 /* RazrbitHarnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 521AE9A7199B31F700D716E5 /* RazrbitHarnessTests.m */; };
+		5234C3CE199DFB9500B98360 /* NOTICE.md in Resources */ = {isa = PBXBuildFile; fileRef = 5234C3CB199DFB9500B98360 /* NOTICE.md */; };
+		5234C3CF199DFB9500B98360 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5234C3CC199DFB9500B98360 /* README.md */; };
+		52453EE3199B34DB00CDAEC7 /* Razrbit.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453EDE199B34DB00CDAEC7 /* Razrbit.m */; };
+		52453EE4199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453EE1199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.m */; };
+		52453F4A199B427B00CDAEC7 /* RazrbitHarnessWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453F49199B427B00CDAEC7 /* RazrbitHarnessWalletTests.m */; };
+		52453F4C199B42D100CDAEC7 /* RazrbitHarnessExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453F4B199B42D100CDAEC7 /* RazrbitHarnessExplorerTests.m */; };
+		52453F4E199B42DB00CDAEC7 /* RazrbitHarnessNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453F4D199B42DB00CDAEC7 /* RazrbitHarnessNetworkTests.m */; };
+		52453F50199B42E500CDAEC7 /* RazrbitHarnessMarketsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453F4F199B42E500CDAEC7 /* RazrbitHarnessMarketsTests.m */; };
+		52453F52199B42F100CDAEC7 /* RazrbitHarnessNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453F51199B42F100CDAEC7 /* RazrbitHarnessNotificationTests.m */; };
+		526A9346199B9E42008D7C45 /* RazrbitBaseServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 526A9345199B9E42008D7C45 /* RazrbitBaseServiceFacade.m */; };
+		526A9349199B9E62008D7C45 /* RazrbitWalletServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 526A9348199B9E62008D7C45 /* RazrbitWalletServiceFacade.m */; };
+		526A934C199BABE4008D7C45 /* RazrbitExplorerServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 526A934B199BABE4008D7C45 /* RazrbitExplorerServiceFacade.m */; };
+		526CCE54199DD760009FED03 /* RazrbitSocketCallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CCE53199DD760009FED03 /* RazrbitSocketCallHandler.m */; };
+		52AABDF4199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AABDF3199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.m */; };
+		52AABDF7199D970600B6B5C5 /* RazrbitMarketsServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AABDF6199D970600B6B5C5 /* RazrbitMarketsServiceFacade.m */; };
+		52B59599199E0EA800A13052 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 52B59598199E0EA800A13052 /* LICENSE */; };
+		52F47CB9199B706900474345 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47CB8199B706900474345 /* CFNetwork.framework */; };
+		52F47CBB199B707400474345 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47CBA199B707400474345 /* Security.framework */; };
+		52F47CBD199B707E00474345 /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47CBC199B707E00474345 /* libSystem.dylib */; };
+		52F47CBF199B708700474345 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47CBE199B708700474345 /* libz.dylib */; };
+		61BBAEEF43424922AAF08589 /* libPods-RazrbitHarnessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BB400379A24B91BEF4A907 /* libPods-RazrbitHarnessTests.a */; };
+		6CC71C9CE0164A8AB9E8833B /* libPods-RazrbitHarnessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B988B79F141A486211643 /* libPods-RazrbitHarnessTests.a */; };
+		C05A8DCF19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C05A8DCE19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m */; };
+		D2A79F1665E441E1958CEA55 /* libPods-RazrbitHarness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03918E6620144190BD8FD03B /* libPods-RazrbitHarness.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		521AE99F199B31F700D716E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 521AE977199B31F700D716E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 521AE97E199B31F700D716E5;
+			remoteInfo = RazrbitHarness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02BB400379A24B91BEF4A907 /* libPods-RazrbitHarnessTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RazrbitHarnessTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03918E6620144190BD8FD03B /* libPods-RazrbitHarness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RazrbitHarness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F90214AF5E944F083F68E46 /* libPods-RazrbitHarness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RazrbitHarness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		217DBE4B073A4C6D97D88E9C /* Pods-RazrbitHarnessTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RazrbitHarnessTests.xcconfig"; path = "Pods/Pods-RazrbitHarnessTests.xcconfig"; sourceTree = "<group>"; };
+		521586C5199E038200B0EE6D /* Razrbit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Razrbit.podspec; sourceTree = "<group>"; };
+		521AE97F199B31F700D716E5 /* RazrbitHarness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RazrbitHarness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521AE982199B31F700D716E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		521AE984199B31F700D716E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		521AE986199B31F700D716E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		521AE98A199B31F700D716E5 /* RazrbitHarness.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RazrbitHarness.plist; sourceTree = "<group>"; };
+		521AE98C199B31F700D716E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		521AE98E199B31F700D716E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		521AE990199B31F700D716E5 /* RazrbitHarness-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RazrbitHarness-Prefix.pch"; sourceTree = "<group>"; };
+		521AE991199B31F700D716E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		521AE992199B31F700D716E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		521AE994199B31F700D716E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		521AE99A199B31F700D716E5 /* RazrbitHarnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RazrbitHarnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		521AE99B199B31F700D716E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		521AE9A3199B31F700D716E5 /* RazrbitHarnessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RazrbitHarnessTests-Info.plist"; sourceTree = "<group>"; };
+		521AE9A5199B31F700D716E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		521AE9A7199B31F700D716E5 /* RazrbitHarnessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RazrbitHarnessTests.m; sourceTree = "<group>"; };
+		5234C3CB199DFB9500B98360 /* NOTICE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.md; sourceTree = "<group>"; };
+		5234C3CC199DFB9500B98360 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		52453EDD199B34DB00CDAEC7 /* Razrbit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Razrbit.h; sourceTree = "<group>"; };
+		52453EDE199B34DB00CDAEC7 /* Razrbit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Razrbit.m; sourceTree = "<group>"; };
+		52453EE0199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitAsyncCallHandler.h; sourceTree = "<group>"; };
+		52453EE1199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitAsyncCallHandler.m; sourceTree = "<group>"; };
+		52453EE2199B34DB00CDAEC7 /* RazrbitDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitDelegate.h; sourceTree = "<group>"; };
+		52453F49199B427B00CDAEC7 /* RazrbitHarnessWalletTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitHarnessWalletTests.m; sourceTree = "<group>"; };
+		52453F4B199B42D100CDAEC7 /* RazrbitHarnessExplorerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitHarnessExplorerTests.m; sourceTree = "<group>"; };
+		52453F4D199B42DB00CDAEC7 /* RazrbitHarnessNetworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitHarnessNetworkTests.m; sourceTree = "<group>"; };
+		52453F4F199B42E500CDAEC7 /* RazrbitHarnessMarketsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitHarnessMarketsTests.m; sourceTree = "<group>"; };
+		52453F51199B42F100CDAEC7 /* RazrbitHarnessNotificationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitHarnessNotificationTests.m; sourceTree = "<group>"; };
+		52453F55199B446800CDAEC7 /* RazrbitHarnessTestConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitHarnessTestConstants.h; sourceTree = "<group>"; };
+		526A9344199B9E42008D7C45 /* RazrbitBaseServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitBaseServiceFacade.h; sourceTree = "<group>"; };
+		526A9345199B9E42008D7C45 /* RazrbitBaseServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitBaseServiceFacade.m; sourceTree = "<group>"; };
+		526A9347199B9E62008D7C45 /* RazrbitWalletServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitWalletServiceFacade.h; sourceTree = "<group>"; };
+		526A9348199B9E62008D7C45 /* RazrbitWalletServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitWalletServiceFacade.m; sourceTree = "<group>"; };
+		526A934A199BABE4008D7C45 /* RazrbitExplorerServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitExplorerServiceFacade.h; sourceTree = "<group>"; };
+		526A934B199BABE4008D7C45 /* RazrbitExplorerServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitExplorerServiceFacade.m; sourceTree = "<group>"; };
+		526CCE52199DD760009FED03 /* RazrbitSocketCallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitSocketCallHandler.h; sourceTree = "<group>"; };
+		526CCE53199DD760009FED03 /* RazrbitSocketCallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitSocketCallHandler.m; sourceTree = "<group>"; };
+		52AABDF2199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitNetworkServiceFacade.h; sourceTree = "<group>"; };
+		52AABDF3199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitNetworkServiceFacade.m; sourceTree = "<group>"; };
+		52AABDF5199D970600B6B5C5 /* RazrbitMarketsServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitMarketsServiceFacade.h; sourceTree = "<group>"; };
+		52AABDF6199D970600B6B5C5 /* RazrbitMarketsServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitMarketsServiceFacade.m; sourceTree = "<group>"; };
+		52B59598199E0EA800A13052 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		52F47CB8199B706900474345 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		52F47CBA199B707400474345 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		52F47CBC199B707E00474345 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		52F47CBE199B708700474345 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		52F47CC4199B719100474345 /* RazrbitConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitConstants.h; sourceTree = "<group>"; };
+		965C04E6371343E9B1CBADAA /* Pods-RazrbitHarness.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RazrbitHarness.xcconfig"; path = "Pods/Pods-RazrbitHarness.xcconfig"; sourceTree = "<group>"; };
+		C05A8DCD19AB321F006F85CD /* RazrbitNotificationsServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitNotificationsServiceFacade.h; sourceTree = "<group>"; };
+		C05A8DCE19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitNotificationsServiceFacade.m; sourceTree = "<group>"; };
+		C49B988B79F141A486211643 /* libPods-RazrbitHarnessTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RazrbitHarnessTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		521AE97C199B31F700D716E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F47CBF199B708700474345 /* libz.dylib in Frameworks */,
+				52F47CBD199B707E00474345 /* libSystem.dylib in Frameworks */,
+				52F47CBB199B707400474345 /* Security.framework in Frameworks */,
+				52F47CB9199B706900474345 /* CFNetwork.framework in Frameworks */,
+				521AE985199B31F700D716E5 /* CoreGraphics.framework in Frameworks */,
+				521AE987199B31F700D716E5 /* UIKit.framework in Frameworks */,
+				521AE983199B31F700D716E5 /* Foundation.framework in Frameworks */,
+				D2A79F1665E441E1958CEA55 /* libPods-RazrbitHarness.a in Frameworks */,
+				380F01C204AB4ADAB7A640AF /* libPods-RazrbitHarness.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521AE997199B31F700D716E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521AE99C199B31F700D716E5 /* XCTest.framework in Frameworks */,
+				521AE99E199B31F700D716E5 /* UIKit.framework in Frameworks */,
+				521AE99D199B31F700D716E5 /* Foundation.framework in Frameworks */,
+				61BBAEEF43424922AAF08589 /* libPods-RazrbitHarnessTests.a in Frameworks */,
+				6CC71C9CE0164A8AB9E8833B /* libPods-RazrbitHarnessTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		521AE976199B31F700D716E5 = {
+			isa = PBXGroup;
+			children = (
+				52B59598199E0EA800A13052 /* LICENSE */,
+				521586C5199E038200B0EE6D /* Razrbit.podspec */,
+				5234C3CB199DFB9500B98360 /* NOTICE.md */,
+				5234C3CC199DFB9500B98360 /* README.md */,
+				52453EDC199B34DB00CDAEC7 /* Razrbit */,
+				521AE988199B31F700D716E5 /* RazrbitHarness */,
+				521AE9A1199B31F700D716E5 /* RazrbitHarnessTests */,
+				521AE981199B31F700D716E5 /* Frameworks */,
+				521AE980199B31F700D716E5 /* Products */,
+				965C04E6371343E9B1CBADAA /* Pods-RazrbitHarness.xcconfig */,
+				217DBE4B073A4C6D97D88E9C /* Pods-RazrbitHarnessTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		521AE980199B31F700D716E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521AE97F199B31F700D716E5 /* RazrbitHarness.app */,
+				521AE99A199B31F700D716E5 /* RazrbitHarnessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		521AE981199B31F700D716E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F47CBE199B708700474345 /* libz.dylib */,
+				52F47CBC199B707E00474345 /* libSystem.dylib */,
+				52F47CBA199B707400474345 /* Security.framework */,
+				52F47CB8199B706900474345 /* CFNetwork.framework */,
+				521AE982199B31F700D716E5 /* Foundation.framework */,
+				521AE984199B31F700D716E5 /* CoreGraphics.framework */,
+				521AE986199B31F700D716E5 /* UIKit.framework */,
+				521AE99B199B31F700D716E5 /* XCTest.framework */,
+				03918E6620144190BD8FD03B /* libPods-RazrbitHarness.a */,
+				02BB400379A24B91BEF4A907 /* libPods-RazrbitHarnessTests.a */,
+				1F90214AF5E944F083F68E46 /* libPods-RazrbitHarness.a */,
+				C49B988B79F141A486211643 /* libPods-RazrbitHarnessTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		521AE988199B31F700D716E5 /* RazrbitHarness */ = {
+			isa = PBXGroup;
+			children = (
+				521AE991199B31F700D716E5 /* AppDelegate.h */,
+				521AE992199B31F700D716E5 /* AppDelegate.m */,
+				521AE994199B31F700D716E5 /* Images.xcassets */,
+				521AE989199B31F700D716E5 /* Supporting Files */,
+			);
+			path = RazrbitHarness;
+			sourceTree = "<group>";
+		};
+		521AE989199B31F700D716E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				521AE98A199B31F700D716E5 /* RazrbitHarness.plist */,
+				521AE98B199B31F700D716E5 /* InfoPlist.strings */,
+				521AE98E199B31F700D716E5 /* main.m */,
+				521AE990199B31F700D716E5 /* RazrbitHarness-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		521AE9A1199B31F700D716E5 /* RazrbitHarnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				52453F4B199B42D100CDAEC7 /* RazrbitHarnessExplorerTests.m */,
+				52453F4F199B42E500CDAEC7 /* RazrbitHarnessMarketsTests.m */,
+				52453F4D199B42DB00CDAEC7 /* RazrbitHarnessNetworkTests.m */,
+				52453F55199B446800CDAEC7 /* RazrbitHarnessTestConstants.h */,
+				521AE9A7199B31F700D716E5 /* RazrbitHarnessTests.m */,
+				52453F49199B427B00CDAEC7 /* RazrbitHarnessWalletTests.m */,
+				52453F51199B42F100CDAEC7 /* RazrbitHarnessNotificationTests.m */,
+				521AE9A2199B31F700D716E5 /* Supporting Files */,
+			);
+			path = RazrbitHarnessTests;
+			sourceTree = "<group>";
+		};
+		521AE9A2199B31F700D716E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				521AE9A3199B31F700D716E5 /* RazrbitHarnessTests-Info.plist */,
+				521AE9A4199B31F700D716E5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52453EDC199B34DB00CDAEC7 /* Razrbit */ = {
+			isa = PBXGroup;
+			children = (
+				52453EDD199B34DB00CDAEC7 /* Razrbit.h */,
+				52453EDE199B34DB00CDAEC7 /* Razrbit.m */,
+				52F47CC4199B719100474345 /* RazrbitConstants.h */,
+				52453EDF199B34DB00CDAEC7 /* Helpers */,
+				526A933A199B9D54008D7C45 /* ServiceFacade */,
+			);
+			path = Razrbit;
+			sourceTree = "<group>";
+		};
+		52453EDF199B34DB00CDAEC7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52453EE0199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.h */,
+				52453EE1199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.m */,
+				52453EE2199B34DB00CDAEC7 /* RazrbitDelegate.h */,
+				526CCE52199DD760009FED03 /* RazrbitSocketCallHandler.h */,
+				526CCE53199DD760009FED03 /* RazrbitSocketCallHandler.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		526A933A199B9D54008D7C45 /* ServiceFacade */ = {
+			isa = PBXGroup;
+			children = (
+				526A9347199B9E62008D7C45 /* RazrbitWalletServiceFacade.h */,
+				526A9348199B9E62008D7C45 /* RazrbitWalletServiceFacade.m */,
+				526A9344199B9E42008D7C45 /* RazrbitBaseServiceFacade.h */,
+				526A9345199B9E42008D7C45 /* RazrbitBaseServiceFacade.m */,
+				526A934A199BABE4008D7C45 /* RazrbitExplorerServiceFacade.h */,
+				526A934B199BABE4008D7C45 /* RazrbitExplorerServiceFacade.m */,
+				52AABDF2199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.h */,
+				52AABDF3199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.m */,
+				52AABDF5199D970600B6B5C5 /* RazrbitMarketsServiceFacade.h */,
+				52AABDF6199D970600B6B5C5 /* RazrbitMarketsServiceFacade.m */,
+				C05A8DCD19AB321F006F85CD /* RazrbitNotificationsServiceFacade.h */,
+				C05A8DCE19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m */,
+			);
+			path = ServiceFacade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		521AE97E199B31F700D716E5 /* RazrbitHarness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521AE9AB199B31F700D716E5 /* Build configuration list for PBXNativeTarget "RazrbitHarness" */;
+			buildPhases = (
+				B6EA74F32BE840D3A12F7D9B /* Check Pods Manifest.lock */,
+				521AE97B199B31F700D716E5 /* Sources */,
+				521AE97C199B31F700D716E5 /* Frameworks */,
+				521AE97D199B31F700D716E5 /* Resources */,
+				3EB35861938A41FAA7CEF986 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RazrbitHarness;
+			productName = RazrbitHarness;
+			productReference = 521AE97F199B31F700D716E5 /* RazrbitHarness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		521AE999199B31F700D716E5 /* RazrbitHarnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521AE9AE199B31F700D716E5 /* Build configuration list for PBXNativeTarget "RazrbitHarnessTests" */;
+			buildPhases = (
+				48B022364814472B80ACB2DB /* Check Pods Manifest.lock */,
+				521AE996199B31F700D716E5 /* Sources */,
+				521AE997199B31F700D716E5 /* Frameworks */,
+				521AE998199B31F700D716E5 /* Resources */,
+				DCC6321C64C94EFE8F914B77 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				521AE9A0199B31F700D716E5 /* PBXTargetDependency */,
+			);
+			name = RazrbitHarnessTests;
+			productName = RazrbitHarnessTests;
+			productReference = 521AE99A199B31F700D716E5 /* RazrbitHarnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		521AE977199B31F700D716E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "LUXSTACK Inc";
+				TargetAttributes = {
+					521AE999199B31F700D716E5 = {
+						TestTargetID = 521AE97E199B31F700D716E5;
+					};
+				};
+			};
+			buildConfigurationList = 521AE97A199B31F700D716E5 /* Build configuration list for PBXProject "RazrbitHarness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 521AE976199B31F700D716E5;
+			productRefGroup = 521AE980199B31F700D716E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				521AE97E199B31F700D716E5 /* RazrbitHarness */,
+				521AE999199B31F700D716E5 /* RazrbitHarnessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		521AE97D199B31F700D716E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521AE98D199B31F700D716E5 /* InfoPlist.strings in Resources */,
+				5234C3CE199DFB9500B98360 /* NOTICE.md in Resources */,
+				521586C6199E038200B0EE6D /* Razrbit.podspec in Resources */,
+				52B59599199E0EA800A13052 /* LICENSE in Resources */,
+				5234C3CF199DFB9500B98360 /* README.md in Resources */,
+				521AE995199B31F700D716E5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521AE998199B31F700D716E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521AE9A6199B31F700D716E5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EB35861938A41FAA7CEF986 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RazrbitHarness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48B022364814472B80ACB2DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EA74F32BE840D3A12F7D9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC6321C64C94EFE8F914B77 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RazrbitHarnessTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		521AE97B199B31F700D716E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526A934C199BABE4008D7C45 /* RazrbitExplorerServiceFacade.m in Sources */,
+				526A9349199B9E62008D7C45 /* RazrbitWalletServiceFacade.m in Sources */,
+				526CCE54199DD760009FED03 /* RazrbitSocketCallHandler.m in Sources */,
+				52453EE4199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.m in Sources */,
+				52AABDF7199D970600B6B5C5 /* RazrbitMarketsServiceFacade.m in Sources */,
+				C05A8DCF19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m in Sources */,
+				52453EE3199B34DB00CDAEC7 /* Razrbit.m in Sources */,
+				526A9346199B9E42008D7C45 /* RazrbitBaseServiceFacade.m in Sources */,
+				521AE993199B31F700D716E5 /* AppDelegate.m in Sources */,
+				521AE98F199B31F700D716E5 /* main.m in Sources */,
+				52AABDF4199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521AE996199B31F700D716E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52453F4E199B42DB00CDAEC7 /* RazrbitHarnessNetworkTests.m in Sources */,
+				52453F52199B42F100CDAEC7 /* RazrbitHarnessNotificationTests.m in Sources */,
+				52453F50199B42E500CDAEC7 /* RazrbitHarnessMarketsTests.m in Sources */,
+				52453F4A199B427B00CDAEC7 /* RazrbitHarnessWalletTests.m in Sources */,
+				52453F4C199B42D100CDAEC7 /* RazrbitHarnessExplorerTests.m in Sources */,
+				521AE9A8199B31F700D716E5 /* RazrbitHarnessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		521AE9A0199B31F700D716E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 521AE97E199B31F700D716E5 /* RazrbitHarness */;
+			targetProxy = 521AE99F199B31F700D716E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		521AE98B199B31F700D716E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521AE98C199B31F700D716E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		521AE9A4199B31F700D716E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521AE9A5199B31F700D716E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		521AE9A9199B31F700D716E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		521AE9AA199B31F700D716E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		521AE9AC199B31F700D716E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965C04E6371343E9B1CBADAA /* Pods-RazrbitHarness.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RazrbitHarness/RazrbitHarness-Prefix.pch";
+				INFOPLIST_FILE = RazrbitHarness/RazrbitHarness.plist;
+				PRODUCT_NAME = RazrbitHarness;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		521AE9AD199B31F700D716E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965C04E6371343E9B1CBADAA /* Pods-RazrbitHarness.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RazrbitHarness/RazrbitHarness-Prefix.pch";
+				INFOPLIST_FILE = RazrbitHarness/RazrbitHarness.plist;
+				PRODUCT_NAME = RazrbitHarness;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		521AE9AF199B31F700D716E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217DBE4B073A4C6D97D88E9C /* Pods-RazrbitHarnessTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RazrbitHarness.app/RazrbitHarness";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RazrbitHarness/RazrbitHarness-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RazrbitHarnessTests/RazrbitHarnessTests-Info.plist";
+				PRODUCT_NAME = RazrbitHarnessTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		521AE9B0199B31F700D716E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217DBE4B073A4C6D97D88E9C /* Pods-RazrbitHarnessTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RazrbitHarness.app/RazrbitHarness";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RazrbitHarness/RazrbitHarness-Prefix.pch";
+				INFOPLIST_FILE = "RazrbitHarnessTests/RazrbitHarnessTests-Info.plist";
+				PRODUCT_NAME = RazrbitHarnessTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		521AE97A199B31F700D716E5 /* Build configuration list for PBXProject "RazrbitHarness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521AE9A9199B31F700D716E5 /* Debug */,
+				521AE9AA199B31F700D716E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521AE9AB199B31F700D716E5 /* Build configuration list for PBXNativeTarget "RazrbitHarness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521AE9AC199B31F700D716E5 /* Debug */,
+				521AE9AD199B31F700D716E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521AE9AE199B31F700D716E5 /* Build configuration list for PBXNativeTarget "RazrbitHarnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521AE9AF199B31F700D716E5 /* Debug */,
+				521AE9B0199B31F700D716E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 521AE977199B31F700D716E5 /* Project object */;
+}
