@@ -1,7 +1,6 @@
 <img src="http://cdn.luxstack.com/assets/razrbit-github-banner-dark-beta.png" style="width:100%"/>
 
 Official SDKs: 
-[Android](https://github.com/LUXSTACK/razrbit-sdk-android) | 
 iOS | 
 [Javascript](https://github.com/LUXSTACK/razrbit-sdk-javascript) | 
 [PHP](https://github.com/LUXSTACK/razrbit-sdk-php) | 
