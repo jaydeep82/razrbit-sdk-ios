@@ -7,8 +7,6 @@
 //
 
 #import "RazrbitWalletServiceFacade.h"
-#import "RazrbitAsyncCallHandler.h"
-#import "RazrbitAuthenticator.h"
 
 @implementation RazrbitWalletServiceFacade
 
@@ -33,6 +31,7 @@
                        completionCallBack:completionBlock];
 }
 
+#if defined(__IPHONE_8_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
 - (void)sendAmountFromPrivateKeyInKeychainToAddress:(NSString *)toAddress amount:(long)amount completion:(RazrbitCompletionBlock)completionBlock {
     
     if (![RazrbitAuthenticator canUseAuthenticator]) {
@@ -54,6 +53,7 @@
         NSLog(@"No addresses stored");
     }
 }
+#endif
 
 - (void)sendAmountFromPrivateKey:(NSString *)fromPrivateKey toAddress:(NSString *)toAddress amount:(long)amount completion:(RazrbitCompletionBlock)completionBlock
 {

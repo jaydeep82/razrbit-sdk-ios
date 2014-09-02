@@ -8,6 +8,8 @@
 
 #import "RazrbitAuthenticator.h"
 
+#if defined(__IPHONE_8_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+
 @interface RazrbitAuthenticator()
 
 @end
@@ -141,3 +143,4 @@ static RazrbitAuthenticator *_sharedInstance;
 }
 
 @end
+#endif
