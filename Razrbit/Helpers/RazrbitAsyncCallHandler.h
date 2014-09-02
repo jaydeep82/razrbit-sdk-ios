@@ -12,6 +12,8 @@
 
 @interface RazrbitAsyncCallHandler : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
+@property BOOL saveResponseToKeychain;
+
 - (id)initWithDelegate:(id<RazrbitDelegate>)delegate invocationKey:(NSString *)key;
 - (void)invokeServiceWithApiRoute:(NSString *)apiRoute parameters:(NSDictionary *)parameters completionCallBack:(RazrbitCompletionBlock)completionBlock;
 

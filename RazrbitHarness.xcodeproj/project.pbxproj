@@ -43,6 +43,8 @@
 		52F47CBF199B708700474345 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F47CBE199B708700474345 /* libz.dylib */; };
 		61BBAEEF43424922AAF08589 /* libPods-RazrbitHarnessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BB400379A24B91BEF4A907 /* libPods-RazrbitHarnessTests.a */; };
 		6CC71C9CE0164A8AB9E8833B /* libPods-RazrbitHarnessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B988B79F141A486211643 /* libPods-RazrbitHarnessTests.a */; };
+		C03015F319B583C400029A85 /* RazrbitAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = C03015F219B583C400029A85 /* RazrbitAuthenticator.m */; };
+		C03015F419B583C400029A85 /* RazrbitAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = C03015F219B583C400029A85 /* RazrbitAuthenticator.m */; };
 		C05A8DCF19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = C05A8DCE19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m */; };
 		D2A79F1665E441E1958CEA55 /* libPods-RazrbitHarness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03918E6620144190BD8FD03B /* libPods-RazrbitHarness.a */; };
 /* End PBXBuildFile section */
@@ -111,6 +113,8 @@
 		52F47CBE199B708700474345 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		52F47CC4199B719100474345 /* RazrbitConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitConstants.h; sourceTree = "<group>"; };
 		965C04E6371343E9B1CBADAA /* Pods-RazrbitHarness.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RazrbitHarness.xcconfig"; path = "Pods/Pods-RazrbitHarness.xcconfig"; sourceTree = "<group>"; };
+		C03015F119B583C400029A85 /* RazrbitAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitAuthenticator.h; sourceTree = "<group>"; };
+		C03015F219B583C400029A85 /* RazrbitAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitAuthenticator.m; sourceTree = "<group>"; };
 		C05A8DCD19AB321F006F85CD /* RazrbitNotificationsServiceFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RazrbitNotificationsServiceFacade.h; sourceTree = "<group>"; };
 		C05A8DCE19AB321F006F85CD /* RazrbitNotificationsServiceFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RazrbitNotificationsServiceFacade.m; sourceTree = "<group>"; };
 		C49B988B79F141A486211643 /* libPods-RazrbitHarnessTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RazrbitHarnessTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +260,8 @@
 			children = (
 				52453EE0199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.h */,
 				52453EE1199B34DB00CDAEC7 /* RazrbitAsyncCallHandler.m */,
+				C03015F119B583C400029A85 /* RazrbitAuthenticator.h */,
+				C03015F219B583C400029A85 /* RazrbitAuthenticator.m */,
 				52453EE2199B34DB00CDAEC7 /* RazrbitDelegate.h */,
 				526CCE52199DD760009FED03 /* RazrbitSocketCallHandler.h */,
 				526CCE53199DD760009FED03 /* RazrbitSocketCallHandler.m */,
@@ -458,6 +464,7 @@
 				526A9346199B9E42008D7C45 /* RazrbitBaseServiceFacade.m in Sources */,
 				521AE993199B31F700D716E5 /* AppDelegate.m in Sources */,
 				521AE98F199B31F700D716E5 /* main.m in Sources */,
+				C03015F319B583C400029A85 /* RazrbitAuthenticator.m in Sources */,
 				52AABDF4199D96FB00B6B5C5 /* RazrbitNetworkServiceFacade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +478,7 @@
 				52453F50199B42E500CDAEC7 /* RazrbitHarnessMarketsTests.m in Sources */,
 				52453F4A199B427B00CDAEC7 /* RazrbitHarnessWalletTests.m in Sources */,
 				52453F4C199B42D100CDAEC7 /* RazrbitHarnessExplorerTests.m in Sources */,
+				C03015F419B583C400029A85 /* RazrbitAuthenticator.m in Sources */,
 				521AE9A8199B31F700D716E5 /* RazrbitHarnessTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
