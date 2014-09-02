@@ -142,6 +142,7 @@
         [self.delegate serviceInvocationCompleted:self key:self.invocationKey];
 
         if (_saveResponseToKeychain) {
+#if defined(__IPHONE_8_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
             if ([RazrbitAuthenticator canUseAuthenticator]) {
                 NSString *address = @"address";
                 NSString *privateKey = @"privateKey";
@@ -155,6 +156,10 @@
             else {
                 NSLog(@"device doesn't support keychain access");
             }
+#else
+            NSLog(@"This demo does not support saving to Keychain prior to iOS 8.0");
+            NSLog(@"Consider using the code described here  http://b2cloud.com.au/tutorial/using-the-keychain-to-store-passwords-on-ios/");
+#endif
         }
 
         // Execute the completion block passed in by the caller.

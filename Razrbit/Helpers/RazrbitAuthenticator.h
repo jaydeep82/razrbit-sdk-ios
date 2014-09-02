@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 LUXSTACK KK. All rights reserved.
 //
 
+
+#import <Availability.h>
 #import <Foundation/Foundation.h>
 #import "RazrbitConstants.h"
 
+#if defined(__IPHONE_8_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
 @interface RazrbitAuthenticator : NSObject
 
 + (RazrbitAuthenticator *)sharedInstance;
@@ -22,3 +25,4 @@
 - (id)getUserDefaultsItemFromKey: (NSString *) key;
 
 @end
+#endif

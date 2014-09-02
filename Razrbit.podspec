@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'Razrbit'
-  s.version  = '0.0.1'
+  s.version  = '0.0.2'
   s.license  = 'MIT'
   s.summary  = 'Singleton which allows access to the REST services offered by Razrbit.'
   s.description = 'Objective-C singleton object which allows access to the REST services offered by Razrbit from the iOS platform. All calls are invoked asynchronously and simply require a block completion callback which will be invoked automatically when the request finishes.'

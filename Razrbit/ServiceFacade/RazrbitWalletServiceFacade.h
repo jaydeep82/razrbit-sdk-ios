@@ -6,8 +6,14 @@
 //  Copyright (c) 2014 LUXSTACK Inc. All rights reserved.
 //
 
+#import <Availability.h>
 #import <Foundation/Foundation.h>
 #import "RazrbitBaseServiceFacade.h"
+#import "RazrbitAsyncCallHandler.h"
+
+#if defined(__IPHONE_8_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+#import "RazrbitAuthenticator.h"
+#endif
 
 @interface RazrbitWalletServiceFacade : RazrbitBaseServiceFacade
 

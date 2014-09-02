@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 LUXSTACK Inc. All rights reserved.
 //
 
+#import <Availability.h>
 #import <Foundation/Foundation.h>
 #import "RazrbitConstants.h"
 #import "RazrbitDelegate.h"
