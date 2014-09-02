@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
 
-  s.public_header_files = 'Razrbit/Razrbit.h'
+  s.public_header_files = 'Razrbit/*.h', 'Razrbit/Helpers/*.h', 'Razrbit/ServiceFacade/*.h'
   s.source_files = 'Razrbit/Razrbit*.{h,m}', 'Razrbit/Helpers/Razrbit*.{h,m}', 'Razrbit/ServiceFacade/Razrbit*.{h,m}'
   
   s.dependency 'PocketSocket', '0.6.3'

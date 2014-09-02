@@ -7,6 +7,7 @@
 //
 
 #import "RazrbitAsyncCallHandler.h"
+#import "RazrbitAuthenticator.h"
 
 @interface RazrbitAsyncCallHandler()
 
@@ -29,6 +30,7 @@
 @synthesize connection = _connection;
 @synthesize completionBlock = _completionBlock;
 @synthesize httpResponse = _httpResponse;
+@synthesize saveResponseToKeychain = _saveResponseToKeychain;
 
 - (NSMutableData *)jsonData
 {
@@ -138,7 +140,23 @@
         
         // Notify our parent that our invocation has completed.
         [self.delegate serviceInvocationCompleted:self key:self.invocationKey];
-        
+
+        if (_saveResponseToKeychain) {
+            if ([RazrbitAuthenticator canUseAuthenticator]) {
+                NSString *address = @"address";
+                NSString *privateKey = @"privateKey";
+
+                // save to keychain
+                [[RazrbitAuthenticator sharedInstance] addItemForKey:serializedJSONObject[address] andValue:serializedJSONObject[privateKey]];
+
+                // save locally to user_defaults
+                [[RazrbitAuthenticator sharedInstance] addItemToUserDefaultsForKey:address andValue:serializedJSONObject[address]];
+            }
+            else {
+                NSLog(@"device doesn't support keychain access");
+            }
+        }
+
         // Execute the completion block passed in by the caller.
         [self completionBlock](serializedJSONObject, nil);
     } else if (self.httpResponse.statusCode == 400) {

@@ -8,6 +8,7 @@
 
 #import "RazrbitWalletServiceFacade.h"
 #import "RazrbitAsyncCallHandler.h"
+#import "RazrbitAuthenticator.h"
 
 @implementation RazrbitWalletServiceFacade
 
@@ -22,13 +23,36 @@
     
     RazrbitAsyncCallHandler *razrbitCall = [[RazrbitAsyncCallHandler alloc] initWithDelegate:self.delegate
                                                                             invocationKey:invocationKey];
-
+    razrbitCall.saveResponseToKeychain = YES;
+    
     // Hold onto the object until the invocation is completed.
     [self.delegate serviceInvocationStarted:self asyncCallHandler:razrbitCall key:invocationKey];
 
     [razrbitCall invokeServiceWithApiRoute:apiRoute
                                parameters:nil
                        completionCallBack:completionBlock];
+}
+
+- (void)sendAmountFromPrivateKeyInKeychainToAddress:(NSString *)toAddress amount:(long)amount completion:(RazrbitCompletionBlock)completionBlock {
+    
+    if (![RazrbitAuthenticator canUseAuthenticator]) {
+        NSLog(@"device doesn't support keychain access");
+        return;
+    }
+    
+    NSArray *addresses = [[RazrbitAuthenticator sharedInstance] getUserDefaultsItemFromKey:@"address"];
+    NSString *privateKey = addresses[0];
+    
+    NSLog(@"private key %@",privateKey);
+    
+    if (privateKey) {
+        [[RazrbitAuthenticator sharedInstance] fetchItemForKey:privateKey options:NULL onSuccess:^(NSString *value) {
+            [self sendAmountFromPrivateKey:privateKey toAddress:value amount:amount completion:completionBlock];
+        } onFailure:NULL];
+    }
+    else {
+        NSLog(@"No addresses stored");
+    }
 }
 
 - (void)sendAmountFromPrivateKey:(NSString *)fromPrivateKey toAddress:(NSString *)toAddress amount:(long)amount completion:(RazrbitCompletionBlock)completionBlock
@@ -53,9 +77,9 @@
     [self.delegate serviceInvocationStarted:self asyncCallHandler:razrbitCall key:invocationKey];
 
     [razrbitCall invokeServiceWithApiRoute:apiRoute
-                               parameters:@{ @"fromPrivateKey" : fromPrivateKey,
+                               parameters:@{ @"fromAddressPrivateKey" : fromPrivateKey,
                                              @"toAddress" : toAddress,
-                                             @"satoshiAmount" : [NSNumber numberWithLong:amount] }
+                                             @"amount" : [NSNumber numberWithLong:amount] }
                        completionCallBack:completionBlock];
 }
 

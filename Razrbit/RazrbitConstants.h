@@ -39,6 +39,22 @@ static NSString *const kRazrbitErrorMsgUnknownError = @"An unknown error occurre
 static NSString *const kRazrbitServerErrorInvalidParameters = @"Invalid parameters";
 static NSString *const kRazrbitServerErrorInsufficientBalance = @"Insufficient balance";
 
+// Reason why authenticator was successful
+typedef NS_ENUM(NSInteger, RazrbitAuthenticatorSuccess) {
+    // authentication was successful by default. Either the device doesn't have the framework, or the user doesn't have a device with TouchID functionality
+    kRazrbitAuthenticatorSuccessByDefault,
+    
+    // authentication was successful through TouchID
+    kRazrbitAuthenticatorSuccessByTouchId
+};
+
+// RazrbitAuthenticator Keychain
+//static NSString *const keychainItemIdentifier = @"razrbitFingerprintKeychainEntry";
+static NSString *const kRazrbitAuthPrivateKey = @"privateKey";
+static NSString *const kRazrbitAuthPublicKey = @"publicKey";
+static NSString *const kRazrbitAuthOptionsPrompt = @"kRazrbitAuthOptionsPrompt";
+static NSString *const kRazrbitAuthKeychainService = @"com.luxstack.RazrbitHarness";
+
 // Common block definition used for all Razrbit calls
 typedef void (^RazrbitCompletionBlock)(id responseValues, NSError *err);
 

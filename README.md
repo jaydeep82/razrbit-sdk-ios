@@ -59,7 +59,8 @@ Once this has been done, any available services can be invoked. Response data is
             privateKey = [responseValues objectForKey:@"privateKey"];
     }];
 ```
-Creates a new bitcoin address in your wallet
+Creates a new bitcoin address in your wallet.  Stores address and private key in the keychain,
+and the address is made visible in the user_defaults under the key: ```address```.
 
 ```ios
     [[Razrbit sharedInstance].wallet sendAmountFromAddress:@"1exampleFromAddressPrivateKey"
@@ -71,6 +72,14 @@ Creates a new bitcoin address in your wallet
                                                }];
 ```
 Sends bitcoin from one of your addresses to the destination addresses. Amount is measured in bits.
+
+```ios
+[[Razrbit sharedInstance].wallet sendAmountFromKeychainForAmount:1234 completion:^(id responseValues, NSError *err) {
+NSLog(@"%@", responseValues);
+}];
+```
+Sends bitcoin from address stored in user_defaults to the destination stored in the keychain.
+
 
 ```ios
 [[Razrbit sharedInstance].wallet getBalanceFromAddress:@"1EP2BdsBSRLCp8cd8L9Hmh1rGs89eaFcXw"
