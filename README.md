@@ -9,7 +9,7 @@ iOS |
 
 **[LUXSTACK](https://luxstack.com) Bitcoin Platform and SDKs — build, test and scale bitcoin apps faster. Plug in our powerful SDKs to supercharge your bitcoin toolbox.**
 
-# LUXSTACK SDK for iOS (Beta)
+# Razrbit SDK for iOS (Beta)
 
 This SDK is a singleton which allows access to the REST services offered by LUXSTACK from the iOS platform. All calls are invoked asynchronously and simply require a block completion callback which will be invoked automatically when the request finishes.
 
