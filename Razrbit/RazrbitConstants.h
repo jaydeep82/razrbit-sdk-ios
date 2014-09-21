@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 // Base Razrbit Address (http requests)
-static NSString *const kBaseRazrbitAddressHttp = @"https://api.razrbit.com";
+static NSString *const kBaseRazrbitAddressHttp = @"https://api.luxstack.com";
 
 // Base Razrbit Address (Websocket requests)
-static NSString *const kBaseRazrbitAddressWebSocket = @"ws://api.razrbit.com";
+static NSString *const kBaseRazrbitAddressWebSocket = @"ws://api.luxstack.com";
 
 // Internal error codes & messages
 static NSString *const kRazrbitErrorDomain = @"Razrbit";

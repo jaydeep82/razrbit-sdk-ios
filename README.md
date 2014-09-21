@@ -1,4 +1,4 @@
-<img src="http://cdn.luxstack.com/assets/razrbit-github-banner-dark-beta.png" style="width:100%"/>
+<img src="http://cdn.luxstack.com/assets/luxstack-logo-dark.png" style="width:100%"/>
 
 Official SDKs: 
 [Android](https://github.com/LUXSTACK/razrbit-sdk-android) | 
@@ -11,7 +11,7 @@ iOS |
 
 # LUXSTACK SDK for iOS (Beta)
 
-This SDK is a singleton which allows access to the REST services offered by Razrbit from the iOS platform. All calls are invoked asynchronously and simply require a block completion callback which will be invoked automatically when the request finishes.
+This SDK is a singleton which allows access to the REST services offered by LUXSTACK from the iOS platform. All calls are invoked asynchronously and simply require a block completion callback which will be invoked automatically when the request finishes.
 
 ## Installation
 

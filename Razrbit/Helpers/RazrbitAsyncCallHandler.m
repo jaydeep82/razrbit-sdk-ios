@@ -234,7 +234,7 @@
 
 - (NSMutableURLRequest *)createURLRequestWithAPIRoute:(NSString *)apiRoute parameters:(NSDictionary *)parameters
 {
-    // Generates an HTTP address similar to: https://api.razrbit.com/api/1/wallet/getBalanceFromAddress
+    // Generates an HTTP address similar to: https://api.luxstack.com/api/1/wallet/getBalanceFromAddress
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", kBaseRazrbitAddressHttp, apiRoute]];
     
     NSString *postBody = [self createBasePostRequest];

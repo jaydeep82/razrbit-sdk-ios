@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
   s.name     = 'Razrbit'
   s.version  = '0.0.2'
   s.license  = 'MIT'
-  s.summary  = 'Singleton which allows access to the REST services offered by Razrbit.'
-  s.description = 'Objective-C singleton object which allows access to the REST services offered by Razrbit from the iOS platform. All calls are invoked asynchronously and simply require a block completion callback which will be invoked automatically when the request finishes.'
+  s.summary  = 'Singleton which allows access to the REST services offered by LUXSTACK.'
+  s.description = 'Objective-C singleton object which allows access to the REST services offered by LUXSTACK from the iOS platform. All calls are invoked asynchronously and simply require a block completion callback which will be invoked automatically when the request finishes.'
   s.homepage = 'https://github.com/LUXSTACK/razrbit-sdk-ios/'
   s.authors  = {
     'Derek Lee' => 'dereklee@downtothis.com'
